@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
 class Book {
-    // Class members
+   
     private String name;
     private String author;
     private double price;
     private int numPages;
 
-    // Constructor to initialize the values
+   
     public Book(String name, String author, double price, int numPages) {
         this.name = name;
         this.author = author;
@@ -15,7 +15,7 @@ class Book {
         this.numPages = numPages;
     }
 
-    // Getters and Setters
+
     public String getName() {
         return name;
     }
@@ -48,8 +48,6 @@ class Book {
         this.numPages = numPages;
     }
 
-    // Overriding the toString() method to display the complete details of the book
-    @Override
     public String toString() {
         return "Book Name: " + name + ", Author: " + author + ", Price: $" + price + ", Pages: " + numPages;
     }
@@ -61,12 +59,10 @@ public class BookStore {
 
         System.out.print("Enter the number of books: ");
         int n = sc.nextInt();
-        sc.nextLine(); // Consume the newline
+        sc.nextLine(); 
 
-        // Creating an array to store n book objects
         Book[] books = new Book[n];
 
-        // Taking input for each book
         for (int i = 0; i < n; i++) {
             System.out.println("\nEnter details for Book " + (i + 1) + ":");
 
@@ -83,11 +79,9 @@ public class BookStore {
             int numPages = sc.nextInt();
             sc.nextLine(); // Consume the newline
 
-            // Create the book object and store it in the array
             books[i] = new Book(name, author, price, numPages);
         }
 
-        // Display the details of all books using toString() method
         System.out.println("\nBook Details:");
         for (int i = 0; i < n; i++) {
             System.out.println(books[i].toString());
