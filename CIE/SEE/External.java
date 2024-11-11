@@ -6,8 +6,7 @@ import java.util.Scanner;
 public class External extends Internals {
     protected int[] externalMarks = new int[5]; 
     protected int[] finalMarks = new int[5];    
-
-    // Method to input external marks for five courses
+    
     public void inputSEEmarks() {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter External Marks for 5 Courses: ");
@@ -17,7 +16,6 @@ public class External extends Internals {
         }
     }
 
-    // Method to calculate final marks (internal + external)
     public void calculateFinalMarks() {
         for (int i = 0; i < 5; i++) {
             finalMarks[i] = marks[i] + externalMarks[i]; 
