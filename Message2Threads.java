@@ -30,5 +30,9 @@ public class Message2Threads {
 
         thread1.start();
         thread2.start();
+        System.out.println("Name : Kanishka Sharma");
+        System.out.println("USN : 1BM23CS138");
+
     }
 }
+
