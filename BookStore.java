@@ -86,6 +86,8 @@ public class BookStore {
         for (int i = 0; i < n; i++) {
             System.out.println(books[i].toString());
         }
+        System.out.println("Name : Kanishka Sharma");
+        System.out.println("USN : 1BM23CS138");
 
         sc.close();
     }
