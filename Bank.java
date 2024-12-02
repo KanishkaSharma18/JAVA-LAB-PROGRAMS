@@ -83,6 +83,9 @@ class CurAcct extends Account {
 
 class Bank {
     public static void main(String[] args) {
+         System.out.println("Name : Kanishka Sharma");
+       System.out.println("USN : 1BM23CS138");
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to the Bank!");
 
